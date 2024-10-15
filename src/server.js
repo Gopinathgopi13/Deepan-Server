@@ -4,7 +4,8 @@ import commonRouter from "./routes/common.js";
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
-import { actionContainer, activeCases, addResidents, contractors, dashboardCount, dynamicSearch, getReport } from "./controller/commonController.js";
+import { actionContainer, activeCases, addResidents, contractors, dashboardCount, dynamicSearch, getReport, storePDF } from "./controller/commonController.js";
+import { upload } from "./helper/multer.js";
 dotenv.config();
 
 const app = express();
